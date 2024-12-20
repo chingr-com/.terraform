@@ -34,7 +34,7 @@ resource "github_branch_default" "terraform_main" {
 resource "github_branch_protection_v3" "terraform_main" {
   repository     = github_repository.terraform.name
   branch         = github_branch.terraform_main.branch
-  enforce_admins = false
+  enforce_admins = true
 
   required_pull_request_reviews {
     dismiss_stale_reviews = true
