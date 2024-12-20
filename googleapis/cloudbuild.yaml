@@ -15,6 +15,7 @@ steps:
     - "-input=false"
     - plan.tfout
   dir: googleapis
+  secretEnv: ['GITHUB_TOKEN']
 
 availableSecrets:
   secretManager:
