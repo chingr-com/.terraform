@@ -7,3 +7,9 @@ steps:
   args:
     - plan
   dir: googleapis
+  secretEnv: ['GITHUB_TOKEN']
+
+availableSecrets:
+  secretManager:
+  - versionName: projects/chingor-test/secrets/admin-github-secret/versions/latest
+    env: 'GITHUB_TOKEN'
