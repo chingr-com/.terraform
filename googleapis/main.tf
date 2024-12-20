@@ -5,7 +5,7 @@ resource "github_organization_ruleset" "disallow_main_push" {
 
   conditions {
     ref_name {
-      include = ["~ALL"]
+      include = ["main"]
       exclude = []
     }
     repository_name {
