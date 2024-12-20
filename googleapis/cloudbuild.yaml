@@ -1,0 +1,9 @@
+steps:
+- name: hashicorp/terraform:1.10
+  args:
+    - init
+  dir: googleapis
+- name: hashicorp/terraform:1.10
+  args:
+    - plan
+  dir: googleapis
