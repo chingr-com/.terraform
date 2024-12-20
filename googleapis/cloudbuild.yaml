@@ -13,3 +13,7 @@ availableSecrets:
   secretManager:
   - versionName: projects/chingor-test/secrets/admin-github-secret/versions/latest
     env: 'GITHUB_TOKEN'
+
+logs_bucket: gs://chingor-test/terraform-logs
+options:
+  logging: GCS_ONLY
