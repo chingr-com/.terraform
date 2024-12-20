@@ -18,6 +18,7 @@ resource "github_repository" "terraform" {
   delete_branch_on_merge      = true
   allow_update_branch         = true
   auto_init                   = true
+  vulnerability_alerts        = true
 }
 
 resource "github_branch" "terraform_main" {
