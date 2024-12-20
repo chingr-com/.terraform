@@ -6,15 +6,8 @@ steps:
 - name: hashicorp/terraform:1.10
   args:
     - plan
-    - "-out=plan.tfout"
   dir: googleapis
   secretEnv: ['GITHUB_TOKEN']
-- name: hashicorp/terraform:1.10
-  args:
-    - apply
-    - "-input=false"
-    - plan.tfout
-  dir: googleapis
 
 availableSecrets:
   secretManager:
