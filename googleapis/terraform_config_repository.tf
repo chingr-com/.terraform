@@ -2,7 +2,7 @@ resource "github_repository" "terraform" {
   name        = ".terraform"
   description = "Repository created via terraform"
 
-  visibility = "internal"
+  visibility = "public"
 
   has_issues      = true
   has_discussions = false
